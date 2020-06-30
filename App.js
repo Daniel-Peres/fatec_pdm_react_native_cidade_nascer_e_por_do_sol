@@ -8,7 +8,7 @@ export default function App() {
   const endPoint = "https://api.openweathermap.org/data/2.5/forecast?lang=pt_br&units=metric&q=";
   const endPointSol = "https://api.openweathermap.org/data/2.5/onecall?lang=pt_br&units=metric&";  
 
-  const apiKey = ""; //coloque sua chave da API  -- site:  https://openweathermap.org/
+  const apiKey = ""; //coloque sua chave da API dentro das aspas  -- site:  https://openweathermap.org/
 
   const [cidade, setCidade] = useState('');
   const [previsoes, setPrevisoes] = useState([]);
