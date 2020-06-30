@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "fatec_pdm_react_native_cidade_nascer_e_por_do_sol",
+    "name": "Hora Nascer e Por-do-Sol",
     "slug": "fatec_pdm_react_native_cidade_nascer_e_por_do_sol",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,7 +8,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffff99"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,6 +18,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.fatec.cidade_nascer_e_por_do_sol"
     },
     "web": {
       "favicon": "./assets/favicon.png"
