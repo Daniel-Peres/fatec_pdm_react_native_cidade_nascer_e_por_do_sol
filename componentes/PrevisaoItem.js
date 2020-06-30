@@ -23,7 +23,7 @@ const PrevisaoItem = (props) => {
                             Nascer-do-Sol: {new Date(props.previsao.sunrise * 1000).toLocaleTimeString()}
                         </Text>
                         <Text style={estilos.valor}>
-                            Pôr-do-Sol: {new Date(props.previsao.sunset * 1000).toLocaleTimeString()}
+                            Pôr-do-Sol   : {new Date(props.previsao.sunset * 1000).toLocaleTimeString()}
                         </Text>
                     </View>
                     <View>
@@ -32,13 +32,13 @@ const PrevisaoItem = (props) => {
                             Madrugada: {props.previsao.feels_like.night} °C
                         </Text>
                         <Text style={estilos.valor}>
-                            Manhã: {props.previsao.feels_like.morn} °C
+                            Manhã    : {props.previsao.feels_like.morn} °C
                         </Text>
                         <Text style={estilos.valor}>
-                            Tarde: {props.previsao.feels_like.day} °C
+                            Tarde    : {props.previsao.feels_like.day} °C
                         </Text>
                         <Text style={estilos.valor}>
-                            Noite: {props.previsao.feels_like.eve} °C
+                            Noite    : {props.previsao.feels_like.eve} °C
                         </Text>
                     </View>
                 </View>
@@ -66,7 +66,7 @@ const estilos = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         marginTop: 4,
-        borderTopWidth: 1,
+        borderTopWidth: 2,
         borderTopColor: '#DDD'
     },
     valor: {
@@ -82,10 +82,12 @@ const estilos = StyleSheet.create({
     },
     sensacao: {
         marginHorizontal: 2,
-        color: "#428e92",
-        fontWeight: 'bold',
+        color: "#ffff",
+        //fontWeight: 'bold',
         fontStyle: "italic",
-        fontSize: 15
+        fontSize: 13,
+        textAlign: "center",
+        backgroundColor: '#306464'
     }
 });
 

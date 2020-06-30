@@ -15,7 +15,7 @@ const estilos = StyleSheet.create({
     cartao: {
         alignItems: 'center',
         elevation: 4,
-        backgroundColor: 'white',
+        backgroundColor: '#79B0B5',
         padding: 12,
         borderRadius: 12,
         marginTop: 5

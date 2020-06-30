@@ -6,9 +6,9 @@ import PrevisaoItem from './componentes/PrevisaoItem';
 export default function App() {
 
   const endPoint = "https://api.openweathermap.org/data/2.5/forecast?lang=pt_br&units=metric&q=";
-  const endPointSol = "https://api.openweathermap.org/data/2.5/onecall?lang=pt_br&units=metric&";  //lat=-23.2642&lon=-47.2992&appid=1e7ae962cdf26b7e0ef5f66b9b347d02"
+  const endPointSol = "https://api.openweathermap.org/data/2.5/onecall?lang=pt_br&units=metric&";  
 
-  const apiKey = ""; // https://openweathermap.org/forecast5
+  const apiKey = ""; //coloque sua chave da API  -- site:  https://openweathermap.org/
 
   const [cidade, setCidade] = useState('');
   const [previsoes, setPrevisoes] = useState([]);
@@ -64,10 +64,10 @@ export default function App() {
           onPress={() => {
             obterPrevisoes();
           }}
-          color='#428e92'
+          color='#306464'
         />
       </View>
-      <View><Text style={styles.tituloCidade}>Cidade: {city.toUpperCase()}</Text></View>
+      <View><Text style={styles.tituloCidade}>{city.toUpperCase()}</Text></View>
       <FlatList
         data={sol}
         renderItem={
